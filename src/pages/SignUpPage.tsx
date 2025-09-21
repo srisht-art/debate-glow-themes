@@ -53,7 +53,7 @@ export default function SignUpPage() {
             <h2 className="text-3xl font-bold">
               Join the Debate Revolution
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-foreground/80 leading-relaxed">
               Connect with AI and fellow debaters to sharpen your argumentation skills and explore new perspectives.
             </p>
           </div>
@@ -88,8 +88,8 @@ export default function SignUpPage() {
               </span>
             </div>
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold">Create your account</h1>
-              <p className="text-muted-foreground">
+              <h1 className="text-3xl font-bold text-foreground">Create your account</h1>
+              <p className="text-foreground/70">
                 Start your debate journey today
               </p>
             </div>

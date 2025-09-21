@@ -31,7 +31,7 @@ export default function HomePage() {
                   </span>{" "}
                   with AI
                 </h1>
-                <p className="text-xl text-muted-foreground max-w-2xl">
+                <p className="text-lg text-foreground/80 max-w-2xl leading-relaxed">
                   Practice arguments, explore perspectives, and master the art of persuasion with our intelligent debate companion.
                 </p>
               </div>
@@ -56,13 +56,15 @@ export default function HomePage() {
               </div>
             </div>
             
-            <div className="relative">
+            <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 rounded-3xl blur-3xl dark:from-primary/10 dark:to-accent/10" />
-              <img 
-                src={debateImage}
-                alt="AI and human debating"
-                className="relative rounded-3xl shadow-card dark:shadow-neon w-full h-auto animate-float"
-              />
+              <div className="relative bg-gradient-to-br from-white/90 to-white/70 dark:from-background/90 dark:to-background/70 rounded-3xl p-4 backdrop-blur-sm">
+                <img 
+                  src={debateImage}
+                  alt="AI and human debating"
+                  className="rounded-2xl shadow-card dark:shadow-neon w-full h-auto animate-float"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -75,7 +77,7 @@ export default function HomePage() {
             <h2 className="text-3xl lg:text-5xl font-bold">
               Master Every Argument
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
               Our AI-powered platform offers everything you need to become a confident and persuasive debater.
             </p>
           </div>
@@ -86,8 +88,8 @@ export default function HomePage() {
                 <div className="rounded-lg bg-primary/10 p-3 w-fit group-hover:bg-primary/20 transition-colors">
                   <Zap className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="text-2xl">Quick Debate</CardTitle>
-                <CardDescription className="text-base">
+                <CardTitle className="text-xl font-semibold">Quick Debate</CardTitle>
+                <CardDescription className="text-base text-foreground/70 leading-relaxed">
                   Jump into instant AI-powered debates on any topic
                 </CardDescription>
               </CardHeader>
@@ -104,8 +106,8 @@ export default function HomePage() {
                 <div className="rounded-lg bg-accent/10 p-3 w-fit group-hover:bg-accent/20 transition-colors">
                   <BookOpen className="h-8 w-8 text-accent" />
                 </div>
-                <CardTitle className="text-2xl">Topic Library</CardTitle>
-                <CardDescription className="text-base">
+                <CardTitle className="text-xl font-semibold">Topic Library</CardTitle>
+                <CardDescription className="text-base text-foreground/70 leading-relaxed">
                   Explore trending debates and curated argument collections
                 </CardDescription>
               </CardHeader>
@@ -122,8 +124,8 @@ export default function HomePage() {
                 <div className="rounded-lg bg-primary/10 p-3 w-fit group-hover:bg-primary/20 transition-colors">
                   <Trophy className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="text-2xl">Saved Debates</CardTitle>
-                <CardDescription className="text-base">
+                <CardTitle className="text-xl font-semibold">Saved Debates</CardTitle>
+                <CardDescription className="text-base text-foreground/70 leading-relaxed">
                   Review your past debates and track your improvement
                 </CardDescription>
               </CardHeader>
@@ -147,21 +149,21 @@ export default function HomePage() {
                 <Users className="h-8 w-8 text-primary mr-2" />
                 <span className="text-4xl font-bold text-primary">10K+</span>
               </div>
-              <p className="text-lg text-muted-foreground">Active Debaters</p>
+              <p className="text-base text-foreground/70">Active Debaters</p>
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-center">
                 <Brain className="h-8 w-8 text-accent mr-2" />
                 <span className="text-4xl font-bold text-accent">50K+</span>
               </div>
-              <p className="text-lg text-muted-foreground">Debates Completed</p>
+              <p className="text-base text-foreground/70">Debates Completed</p>
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-center">
                 <Target className="h-8 w-8 text-primary mr-2" />
                 <span className="text-4xl font-bold text-primary">95%</span>
               </div>
-              <p className="text-lg text-muted-foreground">Skill Improvement</p>
+              <p className="text-base text-foreground/70">Skill Improvement</p>
             </div>
           </div>
         </div>
@@ -178,14 +180,14 @@ export default function HomePage() {
                 </div>
                 <span className="text-xl font-bold">DebateAI</span>
               </div>
-              <p className="text-muted-foreground">
+              <p className="text-foreground/80 leading-relaxed">
                 Empowering minds through intelligent debate and discussion.
               </p>
             </div>
             
             <div className="space-y-4">
               <h4 className="font-semibold">Platform</h4>
-              <div className="space-y-2 text-muted-foreground">
+              <div className="space-y-2 text-foreground/70">/
                 <p className="hover:text-foreground cursor-pointer transition-colors">Features</p>
                 <p className="hover:text-foreground cursor-pointer transition-colors">Pricing</p>
                 <p className="hover:text-foreground cursor-pointer transition-colors">API</p>
@@ -194,7 +196,7 @@ export default function HomePage() {
             
             <div className="space-y-4">
               <h4 className="font-semibold">Resources</h4>
-              <div className="space-y-2 text-muted-foreground">
+              <div className="space-y-2 text-foreground/70">/
                 <p className="hover:text-foreground cursor-pointer transition-colors">Help Center</p>
                 <p className="hover:text-foreground cursor-pointer transition-colors">Tutorials</p>
                 <p className="hover:text-foreground cursor-pointer transition-colors">Community</p>
@@ -203,7 +205,7 @@ export default function HomePage() {
             
             <div className="space-y-4">
               <h4 className="font-semibold">Company</h4>
-              <div className="space-y-2 text-muted-foreground">
+              <div className="space-y-2 text-foreground/70">/
                 <p className="hover:text-foreground cursor-pointer transition-colors">About</p>
                 <p className="hover:text-foreground cursor-pointer transition-colors">Blog</p>
                 <p className="hover:text-foreground cursor-pointer transition-colors">Contact</p>
@@ -211,7 +213,7 @@ export default function HomePage() {
             </div>
           </div>
           
-          <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
+          <div className="border-t border-border mt-12 pt-8 text-center text-foreground/60">/
             <p>&copy; 2024 DebateAI. All rights reserved.</p>
           </div>
         </div>
