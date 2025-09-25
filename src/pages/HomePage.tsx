@@ -50,6 +50,7 @@ export default function HomePage() {
                   size="lg" 
                   variant="neon" 
                   className="text-lg px-8 py-6"
+                  onClick={() => navigate('/topics')}
                 >
                   Explore Arguments
                 </Button>
@@ -112,7 +113,11 @@ export default function HomePage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="ghost" className="w-full group-hover:bg-accent/10">
+                <Button 
+                  variant="ghost" 
+                  className="w-full group-hover:bg-accent/10"
+                  onClick={() => navigate('/topics')}
+                >
                   Browse Topics
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -130,8 +135,12 @@ export default function HomePage() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="ghost" className="w-full group-hover:bg-primary/10">
-                  View History
+                <Button 
+                  variant="ghost" 
+                  className="w-full group-hover:bg-primary/10"
+                  onClick={() => navigate('/leaderboard')}
+                >
+                  View Leaderboard
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </CardContent>
