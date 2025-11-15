@@ -36,18 +36,21 @@ export function Navbar() {
             <Button 
               variant="ghost" 
               className="text-muted-foreground hover:text-foreground"
+              onClick={() => navigate('/topics')}
             >
               Topics
             </Button>
             <Button 
               variant="ghost" 
               className="text-muted-foreground hover:text-foreground"
+              onClick={() => navigate('/leaderboard')}
             >
               Leaderboard
             </Button>
             <Button 
               variant="ghost" 
               className="text-muted-foreground hover:text-foreground"
+              onClick={() => navigate('/about')}
             >
               About
             </Button>
