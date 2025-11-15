@@ -24,14 +24,14 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+                <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-foreground">
                   Sharpen Your{" "}
                   <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                     Debate Skills
                   </span>{" "}
                   with AI
                 </h1>
-                <p className="text-lg text-foreground/80 max-w-2xl leading-relaxed">
+                <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
                   Practice arguments, explore perspectives, and master the art of persuasion with our intelligent debate companion.
                 </p>
               </div>
@@ -41,7 +41,7 @@ export default function HomePage() {
                   size="lg" 
                   variant="accent" 
                   className="text-lg px-8 py-6"
-                  onClick={() => navigate('/signup')}
+                  onClick={() => navigate('/login')}
                 >
                   Start a Debate
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -75,10 +75,10 @@ export default function HomePage() {
       <section className="py-20 bg-secondary/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-4 mb-16">
-            <h2 className="text-3xl lg:text-5xl font-bold">
+            <h2 className="text-3xl lg:text-5xl font-bold text-foreground">
               Master Every Argument
             </h2>
-            <p className="text-lg text-foreground/80 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Our AI-powered platform offers everything you need to become a confident and persuasive debater.
             </p>
           </div>
