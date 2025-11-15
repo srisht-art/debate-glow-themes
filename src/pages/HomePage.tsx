@@ -20,18 +20,18 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
+        <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
+            <div className="space-y-8 relative z-20">
               <div className="space-y-4">
-                <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-foreground">
+                <h1 className="text-4xl lg:text-6xl font-bold leading-tight text-foreground drop-shadow-sm">
                   Sharpen Your{" "}
-                  <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent drop-shadow-none">
                     Debate Skills
                   </span>{" "}
                   with AI
                 </h1>
-                <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
+                <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed drop-shadow-sm">
                   Practice arguments, explore perspectives, and master the art of persuasion with our intelligent debate companion.
                 </p>
               </div>
@@ -39,8 +39,7 @@ export default function HomePage() {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   size="lg" 
-                  variant="accent" 
-                  className="text-lg px-8 py-6"
+                  className="text-lg px-8 py-6 bg-accent hover:bg-accent-hover text-accent-foreground font-semibold shadow-lg hover:shadow-xl transition-all"
                   onClick={() => navigate('/login')}
                 >
                   Start a Debate
@@ -48,8 +47,8 @@ export default function HomePage() {
                 </Button>
                 <Button 
                   size="lg" 
-                  variant="neon" 
-                  className="text-lg px-8 py-6"
+                  variant="outline"
+                  className="text-lg px-8 py-6 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold shadow-lg hover:shadow-xl transition-all"
                   onClick={() => navigate('/topics')}
                 >
                   Explore Arguments
